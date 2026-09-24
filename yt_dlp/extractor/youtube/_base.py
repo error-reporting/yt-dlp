@@ -357,7 +357,7 @@ INNERTUBE_CLIENTS = {
         'INNERTUBE_CONTEXT': {
             'client': {
                 'clientName': 'TVHTML5',
-                'clientVersion': '5.20150304',
+                'clientVersion': '5.20260707',
                 'userAgent': 'Mozilla/5.0 (Linux mipsel) Cobalt/9.28152-debug (unlike Gecko) Starboard/4',
             },
         },
