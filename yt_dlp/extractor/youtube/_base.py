@@ -315,6 +315,8 @@ INNERTUBE_CLIENTS = {
             'client': {
                 'clientName': 'MWEB',
                 'clientVersion': '2.20260708.05.00',
+                # mweb previously did not require PO Token with this UA
+                'userAgent': 'Mozilla/5.0 (iPad; CPU OS 16_7_10 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1,gzip(gfe)', 
             },
         },
         'INNERTUBE_CONTEXT_CLIENT_NAME': 2,
@@ -346,7 +348,6 @@ INNERTUBE_CLIENTS = {
                 'clientVersion': '7.20260707.07.00',
                 # See: https://github.com/youtube/cobalt/blob/main/cobalt/browser/user_agent/user_agent_platform_info.cc#L506
                 'userAgent': 'Mozilla/5.0 (ChromiumStylePlatform) Cobalt/25.lts.30.1034943-gold (unlike Gecko), Unknown_TV_Unknown_0/Unknown (Unknown, Unknown)',
-                'platform' : 'GAME_CONSOLE',
             },
         },
         'INNERTUBE_CONTEXT_CLIENT_NAME': 7,
