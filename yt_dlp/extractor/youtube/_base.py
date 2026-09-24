@@ -372,8 +372,7 @@ INNERTUBE_CLIENTS = {
         'INNERTUBE_CONTEXT': {
             'client': {
                 'clientName': 'TVHTML5_SIMPLY',
-                'platform': 'GAME_CONSOLE',
-                'clientVersion': '1.1',
+                'clientVersion': '1.0',
             },
         },
         'GVS_PO_TOKEN_POLICY': {
