@@ -358,11 +358,7 @@ INNERTUBE_CLIENTS = {
             'client': {
                 'clientName': 'TVHTML5',
                 'clientVersion': '5.20150304',
-                'deviceMake': 'Samsung',
-                'deviceModel': 'SmartTV',
                 'userAgent': 'Mozilla/5.0 (Linux mipsel) Cobalt/9.28152-debug (unlike Gecko) Starboard/4',
-                'osName': 'Linux',
-                'osVersion': '9.28152-debug',
             },
         },
         'INNERTUBE_CONTEXT_CLIENT_NAME': 7,
