@@ -371,7 +371,7 @@ INNERTUBE_CLIENTS = {
         'INNERTUBE_CONTEXT': {
             'client': {
                 'clientName': 'TVHTML5_SIMPLY',
-                'platform': 'GAME_CONSOLE'
+                'platform': 'GAME_CONSOLE',
                 'clientVersion': '1.1',
             },
         },
