@@ -348,6 +348,7 @@ INNERTUBE_CLIENTS = {
                 'clientVersion': '7.20260707.07.00',
                 # See: https://github.com/youtube/cobalt/blob/main/cobalt/browser/user_agent/user_agent_platform_info.cc#L506
                 'userAgent': 'Mozilla/5.0 (ChromiumStylePlatform) Cobalt/25.lts.30.1034943-gold (unlike Gecko), Unknown_TV_Unknown_0/Unknown (Unknown, Unknown)',
+                'platform' : 'GAME_CONSOLE'
             },
         },
         'INNERTUBE_CONTEXT_CLIENT_NAME': 7,
@@ -357,8 +358,12 @@ INNERTUBE_CLIENTS = {
         'INNERTUBE_CONTEXT': {
             'client': {
                 'clientName': 'TVHTML5',
-                'clientVersion': '5.20260707',
-                'userAgent': 'Mozilla/5.0 (ChromiumStylePlatform) Cobalt/Version',
+                'deviceMake': 'Samsung'
+                'deviceModel': 'SmartTV'
+                'osName': 'Tizen'
+                'osVersion': '2.4.0'
+                'clientVersion': '5.20150304',
+                'userAgent': 'Mozilla/5.0 (SMART-TV; Linux; Tizen 2.4.0) AppleWebKit/538.1 (KHTML, like Gecko) Version/2.4.0 TV Safari/538.1',
             },
         },
         'INNERTUBE_CONTEXT_CLIENT_NAME': 7,
@@ -368,7 +373,8 @@ INNERTUBE_CLIENTS = {
         'INNERTUBE_CONTEXT': {
             'client': {
                 'clientName': 'TVHTML5_SIMPLY',
-                'clientVersion': '1.0',
+                'platform': 'GAME_CONSOLE'
+                'clientVersion': '1.1',
             },
         },
         'GVS_PO_TOKEN_POLICY': {
