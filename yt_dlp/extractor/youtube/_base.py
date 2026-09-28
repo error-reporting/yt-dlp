@@ -359,7 +359,7 @@ INNERTUBE_CLIENTS = {
                 'clientVersion': '5.20260707',
                 'deviceMake': 'Samsung',
                 'deviceModel': '21TV_PREMIUM',
-                'userAgent': 'Mozilla/5.0 (SMART-TV; LINUX; Tizen 6.0) AppleWebKit/537.36 (KHTML, like Gecko) 76.0.3809.146/6.0 TV Safari/537.36',
+                'userAgent': 'Mozilla/5.0 (SMART-TV; LINUX; Tizen 6.0 SAMSUNG 21TV_PREMIUM) AppleWebKit/537.36 (KHTML, like Gecko) 76.0.3809.146/6.0 TV Safari/537.36',
                 'osName': 'Tizen',
                 'osVersion': '6.0',
             },
