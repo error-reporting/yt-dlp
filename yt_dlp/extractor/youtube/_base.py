@@ -107,6 +107,19 @@ INNERTUBE_CLIENTS = {
         'SUPPORTS_COOKIES': True,
         **WEB_PO_TOKEN_POLICIES,
     },
+    'web_mobile': {
+        'INNERTUBE_CONTEXT': {
+            'client': {
+                'clientName': 'WEB',
+                'clientVersion': '2.20260708.00.00',
+                # youtube does not serve sabr experiment to this UA
+                'userAgent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36',
+            },
+        },
+        'INNERTUBE_CONTEXT_CLIENT_NAME': 1,
+        'SUPPORTS_COOKIES': True,
+        **WEB_PO_TOKEN_POLICIES,
+    },
     # Safari UA returns pre-merged video+audio 144p/240p/360p/720p/1080p HLS formats
     # Since 2026.07, HLS formats are only returned with some logged-in or "trusted" sessions
     'web_safari': {
