@@ -140,11 +140,11 @@ class YoutubeIE(YoutubeBaseInfoExtractor):
     _RETURN_TYPE = 'video'  # XXX: How to handle multifeed?
 
     _SUBTITLE_FORMATS = ('json3', 'srv1', 'srv2', 'srv3', 'ttml', 'srt', 'vtt')
-    _DEFAULT_CLIENTS = ('visionos', 'android_vr', 'web')
+    _DEFAULT_CLIENTS = ('visionos', 'android_vr', 'web_mobile')
     _DEFAULT_JSLESS_CLIENTS = ('visionos',)
-    _DEFAULT_AUTHED_CLIENTS = ('web_embedded', 'tv_samsung', 'web')
+    _DEFAULT_AUTHED_CLIENTS = ('web_embedded', 'tv_samsung', 'web_mobile')
     # Premium does not require POT (except for subtitles)
-    _DEFAULT_PREMIUM_CLIENTS = ('web_creator', 'tv_samsung_new', 'web')
+    _DEFAULT_PREMIUM_CLIENTS = ('web_creator', 'tv_samsung_new', 'web_mobile')
     _WEBPAGE_CLIENTS = ('web', 'web_safari')
     _DEFAULT_WEBPAGE_CLIENT = 'web'
 
