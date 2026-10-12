@@ -286,7 +286,7 @@ class KickVODIE(KickBaseIE):
         return {
             'id': video_id,
             'channel_id': creator_id,
-            'formats': self._extract_m3u8_formats(m3u8_url, video_id, 'mp4'),
+            'formats': self._extract_m3u8_formats(m3u8_url, video_id , impersonate=True, 'mp4'),
             **metadata,
         }
 
