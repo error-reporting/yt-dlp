@@ -113,6 +113,9 @@ INNERTUBE_CLIENTS = {
                 'clientName': 'WEB',
                 'clientVersion': '2.20260708.00.00',
                 # youtube does not serve sabr experiment to this UA
+                'sec-ch-ua': '"Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"',
+                'sec-ch-ua-mobile': '?0'
+                'sec-ch-ua-platform': 'Android',
                 'userAgent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36',
             },
         },
