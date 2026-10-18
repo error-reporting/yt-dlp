@@ -239,6 +239,7 @@ INNERTUBE_CLIENTS = {
                 'userAgent': 'com.google.android.apps.youtube.vr.oculus/1.65.10 (Linux; U; Android 12L; eureka-user Build/SQ3A.220605.009.A1) gzip',
                 'osName': 'Android',
                 'osVersion': '12L',
+                **WEB_PO_TOKEN_POLICIES,
             },
         },
         'INNERTUBE_CONTEXT_CLIENT_NAME': 28,
