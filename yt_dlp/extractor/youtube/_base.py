@@ -107,22 +107,6 @@ INNERTUBE_CLIENTS = {
         'SUPPORTS_COOKIES': True,
         **WEB_PO_TOKEN_POLICIES,
     },
-    'web_mobile': {
-        'INNERTUBE_CONTEXT': {
-            'client': {
-                'clientName': 'WEB',
-                'clientVersion': '2.20260708.00.00',
-                # youtube does not serve sabr experiment to this UA
-                'sec-ch-ua': '"Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"',
-                'sec-ch-ua-mobile': '?0'
-                'sec-ch-ua-platform': 'Android',
-                'userAgent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36',
-            },
-        },
-        'INNERTUBE_CONTEXT_CLIENT_NAME': 1,
-        'SUPPORTS_COOKIES': True,
-        **WEB_PO_TOKEN_POLICIES,
-    },
     # Safari UA returns pre-merged video+audio 144p/240p/360p/720p/1080p HLS formats
     # Since 2026.07, HLS formats are only returned with some logged-in or "trusted" sessions
     'web_safari': {
@@ -1043,7 +1027,6 @@ class YoutubeBaseInfoExtractor(InfoExtractor):
         url = {
             'mweb': 'https://m.youtube.com',
             'web': 'https://www.youtube.com',
-            'web_mobile': 'https://www.youtube.com',
             'web_safari': 'https://www.youtube.com',
             'web_music': 'https://music.youtube.com',
             'web_creator': 'https://studio.youtube.com',
