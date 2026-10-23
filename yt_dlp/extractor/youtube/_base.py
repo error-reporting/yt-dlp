@@ -17,6 +17,7 @@ from ...utils import (
     bug_reports_message,
     datetime_from_str,
     filter_dict,
+    get_element_by_id,
     get_first,
     int_or_none,
     is_html,
@@ -315,8 +316,6 @@ INNERTUBE_CLIENTS = {
             'client': {
                 'clientName': 'MWEB',
                 'clientVersion': '2.20260708.05.00',
-                # mweb previously did not require PO Token with this UA
-                'userAgent': 'Mozilla/5.0 (iPad; CPU OS 16_7_10 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1,gzip(gfe)',
             },
         },
         'INNERTUBE_CONTEXT_CLIENT_NAME': 2,
@@ -359,6 +358,21 @@ INNERTUBE_CLIENTS = {
                 'clientName': 'TVHTML5',
                 'clientVersion': '5.20260707',
                 'userAgent': 'Mozilla/5.0 (ChromiumStylePlatform) Cobalt/Version',
+            },
+        },
+        'INNERTUBE_CONTEXT_CLIENT_NAME': 7,
+        'SUPPORTS_COOKIES': True,
+    },
+    'tv_samsung_new': {
+        'INNERTUBE_CONTEXT': {
+            'client': {
+                'clientName': 'TVHTML5',
+                'clientVersion': '5.20260707',
+                'deviceMake': 'Samsung',
+                'deviceModel': 'QN900A',
+                'userAgent': 'Mozilla/5.0 (SMART-TV; LINUX; Tizen 6.0 SAMSUNG 21TV_PREMIUM) AppleWebKit/537.36 (KHTML, like Gecko) 76.0.3809.146/6.0 TV Safari/537.36',
+                'osName': 'Tizen',
+                'osVersion': '6.0',
             },
         },
         'INNERTUBE_CONTEXT_CLIENT_NAME': 7,
@@ -1017,8 +1031,11 @@ class YoutubeBaseInfoExtractor(InfoExtractor):
             'web_safari': 'https://www.youtube.com',
             'web_music': 'https://music.youtube.com',
             'web_creator': 'https://studio.youtube.com',
-            'web_embedded': f'https://www.youtube.com/embed/{video_id}?html5=1',
+            'web_embedded': f'https://www.youtube.com/embed/{video_id}',
             'tv': 'https://www.youtube.com/tv',
+            'tv_downgraded': 'https://www.youtube.com/tv',
+            'tv_samsung': 'https://www.youtube.com/tv',
+            'tv_samsung_new': 'https://www.youtube.com/tv',
         }.get(client)
         if not url:
             return {}
