@@ -1059,10 +1059,6 @@ class YoutubeBaseInfoExtractor(InfoExtractor):
             'web_music': 'https://music.youtube.com',
             'web_creator': 'https://studio.youtube.com',
             'web_embedded': f'https://www.youtube.com/embed/{video_id}?html5=1',
-            'tv': 'https://www.youtube.com/tv',
-            'tv_samsung': 'https://www.youtube.com/tv',
-            'tv_samsung_new': 'https://www.youtube.com/tv',
-            'tv_samsung_old': 'https://www.youtube.com/tv',
         }.get(client)
         if not url:
             return {}
